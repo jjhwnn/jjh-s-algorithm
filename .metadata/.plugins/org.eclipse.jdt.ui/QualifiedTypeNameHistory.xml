@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.javalec.base.ValidParentheses"/>
+    <fullyQualifiedTypeName name="com.javalec.base.LinkedList.ListNode"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.javalec.base.RemoveElement"/>
+</qualifiedTypeNameHistroy>

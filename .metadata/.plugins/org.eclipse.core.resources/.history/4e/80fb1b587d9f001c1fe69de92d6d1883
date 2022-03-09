@@ -1,0 +1,85 @@
+package com.javalec.base;
+
+public class ValidParentheses {
+	
+	public static void main(String[] args) {
+		
+		ValidParentheses validParentheses = new ValidParentheses();
+		
+		String s ="()";
+		
+		boolean check = validParentheses.isValid(s);
+		
+		System.out.println(check);
+		
+		String str = "String";
+		
+		for(char a : str.toCharArray()) {
+			
+			System.out.println(a);
+			
+		}
+		
+	}
+	
+
+public boolean isValid(String s) {
+		// 향상된 for문과 toCharArray()메소드를 이용
+	
+	
+		boolean check = false;
+		
+		
+		if(s.length() == 1 || s.length() == 0) {
+			check =false;
+		}
+		
+		for(char a : s.toCharArray()) {
+			
+			switch(a) {
+			
+			case '(':
+				if(a%2==1 && a+1 == ')') {
+					check = true;
+					return check;
+				}
+				
+				break;
+			case '{':
+				if(a%2==1 && a+1 == '}') {
+					check = true;
+				}
+				break;
+			case '[':
+				if(a%2==1 && a+1 == ']') {
+					check = true;
+				}
+				break;
+			case ')':
+				if(a%2==0 && a-1 == '(') {
+					check = true;
+				}
+				break;
+			case '}':
+				if(a%2==0 && a-1 == '{') {
+					check = true;
+				}
+				break;
+			case ']':
+				if(a%2==0 && a-1 == '[') {
+					check = true;
+				}
+				break;
+			
+			}
+			
+			
+		}
+		
+		
+		
+		
+		return check;
+		
+	}
+}

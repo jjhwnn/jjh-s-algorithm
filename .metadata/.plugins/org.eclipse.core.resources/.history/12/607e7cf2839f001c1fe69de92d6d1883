@@ -1,0 +1,44 @@
+package com.javalec.base.LinkedList;
+
+import java.util.ArrayList;
+
+public class MergeTwoLists {
+	
+	public static void main(String[] args) {
+		
+		int num = 1;
+		int num2 = 2;
+		
+		int[] nums;
+		
+		ListNode list1 = new ListNode(num);
+		
+		ListNode list2 = new ListNode(num2, list1);
+		
+		ArrayList<ListNode> list = new ArrayList<ListNode>();
+		
+		list.add(list1);
+		
+		System.out.println(list.toString());
+		
+		
+	}
+	
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+    	// 두 리스트를 연결하여 오름차순으로 순서대로 반환
+    	
+    	
+    	list1 = new ListNode();
+    	
+    	int[] nums = {list1.val, list2.val} ;
+    	
+    	
+    	
+
+    	
+        
+        
+    	return list1;
+    }
+     
+}

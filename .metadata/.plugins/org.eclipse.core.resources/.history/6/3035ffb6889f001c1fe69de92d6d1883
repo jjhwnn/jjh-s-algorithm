@@ -1,0 +1,38 @@
+package com.javalec.base;
+
+import java.util.ArrayList;
+
+public class RemoveElement {
+	public static void main(String[] args) {
+		RemoveElement element = new RemoveElement();
+		
+		int[] nums = {1, 1, 2, 3};
+		int val = 2;
+		
+		element.removeElement(nums, val);
+	}
+	
+	public int removeElement(int[] nums, int val) {
+	    // nums배열과 val배열을 입력받고
+		// 배열 내에 val에 해당하는 수들을 모두 제거하고
+		// 남은 수들의 개수를 반환
+		
+		ArrayList<Integer> arrayList = new ArrayList<Integer>();
+		
+		for(int i = 0; i < nums.length; i++) {
+			
+			arrayList.add(nums[i]);
+		}
+
+		for(int i = 0; i < arrayList.size(); i++) {
+		
+			if(nums[i] == val) {
+				arrayList.remove(nums[i]);
+				
+			}
+		
+		}
+		
+		return arrayList.size();
+    }
+}
