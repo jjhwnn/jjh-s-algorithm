@@ -2,6 +2,7 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="com.javalec.base.ValidParentheses"/>
     <fullyQualifiedTypeName name="com.javalec.base.LinkedList.ListNode"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.javalec.base.RemoveElement"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

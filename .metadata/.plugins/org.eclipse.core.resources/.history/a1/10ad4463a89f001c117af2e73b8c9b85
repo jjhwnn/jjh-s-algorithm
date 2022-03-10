@@ -25,37 +25,37 @@ public class RemoveElement {
 		int result = 0;
 		
 		
-		
-		ArrayList<Integer> arrayList = new ArrayList<Integer>();
-		
-		for(int i = 0; i < nums.length; i++) {
-			arrayList.add(nums[i]);
-		}
-		
-		for(int i = 0; i < arrayList.size(); i++) {
-		
-			if (arrayList.get(i) == val) {
-				
-				arrayList.remove(i);
-			}
-		
-		}
-		System.out.println(arrayList);
-		result = arrayList.size();
-		 
-		for(int i =0; i < arrayList.size(); i++) {
-			nums[i] = arrayList.get(i);
-		}
-		
-//		for (int i = 0; i < nums.length; i++) {
-//			
-//			if(nums[i] == val) {
-//				
-//				nums[i] = 0;
-//				result += 1;
-//			}
-//			
+//		
+//		ArrayList<Integer> arrayList = new ArrayList<Integer>();
+//		
+//		for(int i = 0; i < nums.length; i++) {
+//			arrayList.add(nums[i]);
 //		}
+//		
+//		for(int i = 0; i < arrayList.size(); i++) {
+//		
+//			if (arrayList.get(i) == val) {
+//				
+//				arrayList.remove(i);
+//			}
+//		
+//		}
+//		System.out.println(arrayList);
+//		result = arrayList.size();
+//		 
+//		for(int i =0; i < arrayList.size(); i++) {
+//			nums[i] = arrayList.get(i);
+//		}
+		
+		for (int i = 0; i < nums.length; i++) {
+			
+			if(nums[i] == val) {
+				
+				nums[i] = 0;
+				result += 1;
+			}
+			
+		}
 		
 		
 		
