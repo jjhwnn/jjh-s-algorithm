@@ -6,12 +6,11 @@ public class ValidParentheses {
 		
 		ValidParentheses validParentheses = new ValidParentheses();
 		
-		String s ="()";
+		String s ="(()())";
 		
 		boolean check = validParentheses.isValid(s);
 		
 		System.out.println(check);
-		
 		
 	}
 	
@@ -27,7 +26,64 @@ public boolean isValid(String s) {
 			check =false;
 		}
 		
+		for(int i = 0; i < s.length(); i++) {
+				
+				switch(s.charAt(i)) {
+				case '(':
+					if(s.charAt(i+1)== ')') {
+						check = true;
+					}else {
+						check = false;
+					}
+					break;
+				case '{':
+					if(s.charAt(i+1)== '}') {
+						check = true;
+					}else {
+						
+						check = false;
+					}
+					break;
+				case '[':
+					if(s.charAt(i+1)== ']') {
+						check = true;
+					}else {
+						
+						check = false;
+					}
+					break;
+				case ')':
+					if(i >= 1 && s.charAt(i-1) == '(') {
+						check = true;
+					}else {
+						
+						check = false;
+					}
+					break;
+				case '}':
+					if(i >= 1 && s.charAt(i-1) == '{') {
+						check = true;
+					}else {
+						
+						check = false;
+					}
+					break;
+				case ']':
+					if(i >= 1 && s.charAt(i-1) == '[') {
+						check = true;
+					}else {
+						
+						check = false;
+					}
+					break;
+				
+				}
+				
+				if(s.charAt(i) == 'i')
+			
+		}
 		
+
 		
 		
 		
