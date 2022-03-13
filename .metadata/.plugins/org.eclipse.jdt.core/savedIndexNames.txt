@@ -1,4 +1,3 @@
 INDEX VERSION 1.131+C:\Users\user\Desktop\git_Algorithm\.metadata\.plugins\org.eclipse.jdt.core
-2460325356.index
 1781747251.index
 1865797976.index

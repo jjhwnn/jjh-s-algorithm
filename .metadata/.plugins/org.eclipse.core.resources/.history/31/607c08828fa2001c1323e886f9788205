@@ -27,7 +27,7 @@ public class RemoveDuplicates {
 				
 				if(j <= nums.length-1 && nums[i] == nums[j]) {
 					
-					nums[j] = 9999;
+					nums[j] = '_';
 					
 				}
 				
@@ -37,7 +37,7 @@ public class RemoveDuplicates {
 
 		for(int i = 0; i < nums.length; i++) {
 			
-			if(nums[i] == 9999) {
+			if(nums[i] == '_') {
 				count += 1;
 			}
 			
